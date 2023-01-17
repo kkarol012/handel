@@ -1,1 +1,21 @@
 <app-price-table [prices]="prices"></app-price-table>
+<app-price-fetcher
+  [time]="1000"
+  [currency]="'1'"
+  (updatePrice)="updatePrice($event)"
+></app-price-fetcher>
+<app-price-fetcher
+  [time]="2000"
+  [currency]="'2'"
+  (updatePrice)="updatePrice($event)"
+></app-price-fetcher>
+<app-price-fetcher
+  [time]="3000"
+  [currency]="'3'"
+  (updatePrice)="updatePrice($event)"
+></app-price-fetcher>
+<app-price-fetcher
+  [time]="4000"
+  [currency]="'4'"
+  (updatePrice)="updatePrice($event)"
+></app-price-fetcher>
